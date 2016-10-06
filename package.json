@@ -1,0 +1,17 @@
+{
+  "name": "arcn-light-ui",
+  "theme": "ui",
+  "version": "1.0.0",
+  "description": "Atom UI theme based on the arc theme (for GTK 3, GTK 2 and Gnome-Shell) and the adaptable UI nucleus-dark-ui.",
+  "keywords": [
+    "light",
+    "arc",
+    "ui"
+  ],
+  "repository": "https://github.com/tinchoz49/arcn-light-ui.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}

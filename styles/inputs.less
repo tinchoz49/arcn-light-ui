@@ -8,6 +8,7 @@
 .input-range {
   .transition(background);
   background: @base-border-color;
+
   &:checked {
     background: @background-color-info;
   }
@@ -21,7 +22,7 @@
 .input-textarea {
   .transition(background);
   border: 0;
-  background: @base-border-color;
+  background: @arc-grey-light;
 
   .cursor {
     border-color: @ui-text-color-accent;
@@ -63,8 +64,5 @@ atom-text-editor.mini.is-focused::shadow,
 atom-text-editor.mini:hover,
 atom-text-editor.mini:hover::shadow{
   background: @input-background-color;
-  .text,
-  .regexp {
-    .text(invert);
-  }
+
 }

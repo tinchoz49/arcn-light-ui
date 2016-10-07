@@ -7,7 +7,7 @@
 .input-toggle,
 .input-range {
   .transition(background);
-  background: @base-border-color;
+  background: @arc-grey-light;
 
   &:checked {
     background: @background-color-info;
@@ -22,7 +22,7 @@
 .input-textarea {
   .transition(background);
   border: 0;
-  background: @arc-grey-light;
+  background: @arc-grey-medium;
 
   .cursor {
     border-color: @ui-text-color-accent;
@@ -37,10 +37,16 @@
   }
 }
 
+.find-meta-container {
+  .text-subtle {
+    color: @arc-grey-dark;
+  }
+}
+
 atom-text-editor.mini,
 atom-text-editor.mini::shadow {
   .transition();
-  background: @base-border-color;
+  background: @arc-grey-medium;
   border-radius: @component-border-radius;
   height: @input-height;
   line-height: @input-height;
@@ -55,7 +61,7 @@ atom-text-editor.mini::shadow {
 
   .text,
   .regexp {
-    .text(normal);
+    color: @arc-grey-dark;
   }
 }
 
@@ -65,4 +71,12 @@ atom-text-editor.mini:hover,
 atom-text-editor.mini:hover::shadow{
   background: @input-background-color;
 
+  .text,
+  .regexp {
+    .text(normal);
+  }
+
+  .placeholder-text {
+    .text(normal);
+  }
 }
